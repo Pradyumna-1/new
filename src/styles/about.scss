@@ -1,0 +1,119 @@
+// #about {
+//     width: 100%;
+//     height: 100%;
+//     padding: 8rem $p;
+//     display: flex;
+//     width: 100%;
+//     height: 90vh;
+//     display: flex;
+
+//     >section {
+//         width: 100%;
+//     }
+
+//     >h2 {
+//         // color: dark;
+
+//         font: 900 2rem $text1;
+//         text-align: center;
+//         font: 700 2.5rem $text2;
+//         width: fit-content;
+//         border-bottom: 1px solid $color6_1;
+//         padding: 0.5rem;
+//         margin: auto;
+
+//         >section {
+//             display: flex;
+//             align-items: left;
+//             width: 50px;
+//             >img {
+//                 width: 40vmax;
+//                 object-fit: contain;
+//                 height: 40vmax;
+//             }
+//         }
+//     }
+// }
+// Styles.scss
+#about {
+  text-align: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      width: fit-content;
+      border-bottom: 1px solid $color6_1;
+      padding: 0.5rem;
+      margin: 0 auto;
+    }
+  
+    .about__me {
+      margin-top: 2rem;
+      display: flex;
+    flex-direction: column;
+      align-items: flex-start; // Align items to the left
+      justify-content: center;
+    
+      img {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+      margin-left: -280px; // Adjusted margin-left
+        height: auto;
+        border-radius: 2rem;
+      }
+      
+      p {
+        max-width: 600px;
+      text-align: justify;
+        margin: -320px 10px 20px;
+          /* Adjusted margin-left to 10px */
+        width: 100%;
+        height: auto;
+      padding: 10px;
+    }
+
+    .btn {
+      display: block;
+        padding: 10px;
+      background-color: #007bff;
+      color: $color1;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-left: 50px;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+        }
+    
+        @media screen and (max-width: 600px) {
+          .about__me {
+            flex-direction: column;
+            align-items: center;
+        
+            img {
+              margin-left: 0; // Reset margin-left
+            }
+        
+            p {
+              margin: 10px 10px 20px; // Adjusted margin
+            }
+        
+            .btn {
+              margin-left: 0; // Reset margin-left
+            }
+          }
+        }
+        
+  
+}
